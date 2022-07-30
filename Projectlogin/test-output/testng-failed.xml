@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [logintest]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Correct Username(failed)">
+    <parameter name="password" value="admin"/>
+    <parameter name="username" value="Admin"/>
+    <classes>
+      <class name="LoginTestCases.TestCase1">
+        <methods>
+          <include name="test1" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- LoginTestCases.TestCase1 -->
+    </classes>
+  </test> <!-- Correct Username(failed) -->
+  <test thread-count="5" name="Correct Password(failed)">
+    <parameter name="password" value="admin123"/>
+    <parameter name="username" value="Adin"/>
+    <classes>
+      <class name="LoginTestCases.TestCase1">
+        <methods>
+          <include name="test1" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- LoginTestCases.TestCase1 -->
+    </classes>
+  </test> <!-- Correct Password(failed) -->
+  <test thread-count="5" name="Both Wrong(failed)">
+    <parameter name="password" value="admin"/>
+    <parameter name="username" value="Adin"/>
+    <classes>
+      <class name="LoginTestCases.TestCase1">
+        <methods>
+          <include name="test1" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- LoginTestCases.TestCase1 -->
+    </classes>
+  </test> <!-- Both Wrong(failed) -->
+  <test thread-count="5" name="Both Correct(failed)">
+    <parameter name="password" value="admin123"/>
+    <parameter name="username" value="Admin"/>
+    <classes>
+      <class name="LoginTestCases.TestCase1">
+        <methods>
+          <include name="test1" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- LoginTestCases.TestCase1 -->
+    </classes>
+  </test> <!-- Both Correct(failed) -->
+</suite> <!-- Failed suite [logintest] -->
